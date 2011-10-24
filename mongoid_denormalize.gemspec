@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Logan Raarup"]
-  s.date = %q{2011-08-04}
+  s.authors = [%q{Logan Raarup}]
+  s.date = %q{2011-10-24}
   s.description = %q{Helper module for denormalizing association attributes in Mongoid models.}
   s.email = %q{logan@logan.dk}
   s.extra_rdoc_files = [
@@ -24,13 +24,17 @@ Gem::Specification.new do |s|
     "lib/railties/railtie.rb"
   ]
   s.homepage = %q{http://github.com/logandk/mongoid_denormalize}
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.6}
   s.summary = %q{Mongoid denormalization helper.}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
-    s.add_dependency(%q<mongoid>, [">= 2.1.9"])
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+    else
+    end
+  else
   end
 end
 
