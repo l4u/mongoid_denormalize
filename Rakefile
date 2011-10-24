@@ -2,7 +2,10 @@ require 'rubygems'
 require 'rake'
 require 'jeweler'
 
+require 'rspec/core/rake_task'
+require 'jeweler'
 
+RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 
 Jeweler::Tasks.new do |gemspec|
