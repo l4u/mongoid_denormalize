@@ -120,7 +120,7 @@ So, if User has_many :posts and User has_many :comments, but Comments are embedd
 
 Contributors
 -------
-* hubsmoke (https://github.com/hubsmoke)
+* Sina Iman (https://github.com/hubsmoke)
 * Leo Lou (https://github.com/l4u)
 * Austin Bales (https://github.com/arbales)
 
