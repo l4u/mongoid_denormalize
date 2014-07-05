@@ -32,6 +32,10 @@ describe Mongoid::Denormalize do
       @comment.fields.should have_key "user_email"
     end
     
+    it "should pass through custom options to the generated field" do
+      @comment.fields["post_created_at"].options.should have_key :required
+    end
+    
     it "should denormalize fields without specified type" do
       @comment.user_name.should eql @user.name
       @comment.user_email.should eql @user.email
